@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "c4e9918f-d2bb-43ba-9181-186503be8f1a",
+      "email": "1@gmail.com",
+      "password": "1",
+      "type": "user",
+      "createdTime": "21:10:09 25/2/2024"
+    },
+    {
+      "id": "c4e9918f-d2bb-43ba-9181-186503beasdd",
+      "email": "1",
+      "password": "1",
+      "type": "admin",
+      "createdTime": "21:10:09 25/2/2024"
+    },
+    {
+      "id": "d6fa5d51-d4c2-44bf-b893-1d2074761d1f",
+      "email": "tu",
+      "password": "1",
+      "type": "user",
+      "createdTime": "22:08:44 25/2/2024"
+    }
+  ]
+}
