@@ -6,9 +6,9 @@ import { FacebookOutlined, GoogleOutlined } from "@ant-design/icons";
 import { findAll } from "../../service/user.service";
 
 const Login = () => {
+  const navigate = useNavigate();
   // state chua du lieu
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   // lấy dữ liệu trong kho lưu trữ
   const dataUser = useSelector((state) => state.user.data);
   const [userEmail, setUserEmail] = useState("");

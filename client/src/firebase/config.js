@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-
+import { getStorage } from "firebase/storage";
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
   authDomain: import.meta.env.VITE_REACT_APP_AUTH_DOMAIN,
@@ -11,3 +11,4 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const storage = getStorage(app);

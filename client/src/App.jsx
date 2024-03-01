@@ -13,6 +13,9 @@ import Rent from "./pages/user/Rent";
 import Login from "./pages/user/Login";
 import PrivateRouter from "./routes/PrivateRouter";
 import Dashboard from "./pages/admin/Dashboard";
+import PostsList from "./pages/admin/PostsList";
+import CreatePost from "./pages/admin/CreatePost";
+import CreateBuy from "./pages/admin/CreateBuy";
 
 function App() {
   const location = useLocation();
@@ -35,8 +38,11 @@ function App() {
         </Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/admin/" element={<PrivateRouter />}>
+        <Route path="/admin" element={<PrivateRouter />}>
           <Route index element={<Dashboard />}></Route>
+          <Route path="posts-list" element={<PostsList />}></Route>
+          <Route path="create-post" element={<CreatePost />}></Route>
+          <Route path="create-buy" element={<CreateBuy />}></Route>
         </Route>
       </Routes>
     </>
