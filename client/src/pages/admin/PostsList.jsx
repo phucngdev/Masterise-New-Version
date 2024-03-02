@@ -1,9 +1,12 @@
 import React from "react";
+import TextEditor from "../../components/admin/TextEditor";
 
 const PostsList = () => {
   return (
     <>
-      <div className="w-full h-10 bg-black"></div>
+      <div className="w-full">
+        <TextEditor></TextEditor>
+      </div>
     </>
   );
 };
